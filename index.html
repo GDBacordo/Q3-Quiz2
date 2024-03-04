@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3 Quiz2</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		body {
+			background-image:url(https://images.pexels.com/photos/1227511/pexels-photo-1227511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+			font-family:"Lora";
+		}
+		nav {
+			height:150px;
+		}
+		h1 {
+			font-size:50px;
+			text-shadow: 4px 4px #000000;
+		}
+		.outline {
+			text-decoration:none;
+		}
+		a {
+			color:#FFFFFF;
+		}
+		a:hover {
+			opacity:80%;
+		}
+		.row {
+			margin:20px;
+			background-color:#FFFFFF80;
+			border:1px dotted #000000;
+		}
+		table {
+			border:2px dashed #00000080;
+			background-color:#FFFFFF;
+			margin:5px;
+		}
+		th {
+			font-size:150%;
+			width:33%;
+			text-align:center;
+			color:#FFFFFF;
+		}
+		td {
+			height:445px;
+			padding:20px;
+		}
+		.underline {
+			text-decoration:underline;
+		}
+		hr {
+			color:#FFFF81;
+			height:10px;
+			opacity:100%;
+		}
+		.rating {
+			margin-bottom:290px;
+		}
+		.poster {
+			border:2px dashed #00000080;
+			margin-top:40px;
+			margin-bottom:-30px;
+			margin-left:5px;
+			width:90%;
+		}
+		.stars {
+			display:inline-flex;
+			width:20px;
+			height:20px;
+		}
+		.star {
+			width:40px;
+			height:40px;
+		}
+		.star-cropped {
+			width:20px;
+			height:40px;
+			object-fit:cover;
+			object-position: -1% 0;
+		}
+		footer {
+			background-color:#cc311a80;
+			color:#FFFFFF;
+			padding:15px;
+		}
+		.col-xl-2 {
+			font-size:150%;
+			margin-top:30px;
+		}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+	    <img src="https://img.freepik.com/premium-vector/popcorn-logo_9845-76.jpg?w=1060" class="rounded-pill" alt="Popcorn Logo" style="width:120px">
+	</a>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+
+   	<h1 class="text-secondary">Movie Reviews</h1>
+
+	      <ul class="navbar-nav me-auto nav-justified">
+
+	        <li class="nav-item dropdown">
+	          <a href="index.html" class="nav-link">Home</a>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Movies</a>
+	              <ul class="dropdown-menu">
+				      <li><a class="dropdown-item" href="#movie_1">Notting Hill</a></li>
+				      <li><a class="dropdown-item" href="#movie_2">A Walk to Remember</a></li>
+				      <li><a class="dropdown-item" href="#movie_3">Crash Landing on You</a></li>
+				  </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a href="https://nofilmschool.com/romance-movie-genre" class="nav-link">Genre</a>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a href="https://gdbacordo.github.io/Q3-Practice" class="nav-link">Register</a>
+	        </li>
+
+	      </ul>
+    </div>
+  </div>
+</nav>
+
+		<div class="row">
+
+			<div class="col-xl-3 bg-light-grey">
+				<img src="https://m.media-amazon.com/images/M/MV5BMTE5OTkwYzYtNDhlNC00MzljLTk1YTktY2IxZjliZmNjMjUzL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg" id="movie_1" class="rounded poster" alt="Poster of Notting Hill movie">
+				<img src="https://m.media-amazon.com/images/M/MV5BMzU3NTYxM2MtNjViMS00YmNlLWEwM2MtYWI2MzgzNTkxODFjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg" id="movie_2" class="rounded poster" alt="Poster of A Walk to Remember Movie">
+				<img src="https://m.media-amazon.com/images/M/MV5BMzRiZWUyN2YtNDI4YS00NTg2LTg0OTgtMGI2ZjU4ODQ4Yjk3XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_FMjpg_UX1000_.jpg" id="movie_3" class="rounded poster" alt="Poster of Crash Landing on You Movie">
+			</div>
+
+			<div class="col-xl-7 bg-lightgrey">
+					<table class="table-bordered">
+
+						<tr class="bg-secondary">
+							<th>Synopsis</th>
+							<th>Cast and Directors</th>
+							<th>Review</th>
+						</tr>
+
+						<tr>
+							<td>A set of circumstances makes Anna Scott, a famous actress, fall in love with William Thacker, owner of a bookstore in Notting Hill. But the paparazzi's fascination with her complicates their bond.</td>
+							<td>Hugh Grant as <em>William Thacker</em> and Julia Roberts as <em>Anna Scott</em><br><br>Directed by Roger Michell<br>Written by Richard Curtis<br><br>Duration: <span class=underline>2 hours 4 minutes</span></td>
+							<td>Notting Hill beautifully portays the love between a top Hollywood actress and a small bookshop owner in London. It shows how differences in social status cannot conquer the power of true love. Their love story is charming, moving, and an overall enjoyable watch.</td>
+						</tr>
+
+						<tr>
+							<td>Two North Carolina teens, Landon Carter and Jamie Sullivan, are thrown together after Landon gets into trouble and is sentenced to perform community service.</td>
+							<td>Mandy Moore as <em>Jamie Sullivan</em> and Shane West as <em>Landon Carter</em><br><br>Directed by Adam Shankman<br>Written by Nicholas Sparks and Karen Janszen<br><br>Duration: <span class="underline">1 hour and 41 minutes</span></td>
+							<td>A Walk to Remember is a heart-wrenching movie about two teenagers, one who learns how to improve himself and one who is gone too soon. This movie teaches us many lessons in love and how to be a better person, all taught by the main character Jamie and her love interest Landon. This movie is a valuable watch that will most definitely leave you crying.</td>
+						</tr>
+
+						<tr>
+							<td>The absolute top secret love story of a chaebol heiress who made an emergency landing in North Korea because of a paragliding accident and a North Korean special officer who falls in love with her and who is hiding and protecting her.</td>
+							<td>Hyun Bin as <em>Ri Jeong-hyeok</em> and Son Ye-jin<em> as Yoon Se-ri</em><br><br>Directed by Kim Hui-won and Lee Jung-hyo<br>Written by Ji Eun Park<br><br>Duration: <span class="underline">Twenty-two hours and twenty-four minutes.</span></td>
+							<td>The story is captivating, both thrilling and romantic. The narrative keeps you engaged in the show. With themes of romance, comedy, and action, Crash Landing on You provides an exciting experience for all of those who watch it.</td>
+						</tr>
+
+					</table>
+			</div>
+
+			<div class="col-xl-2 bg-lightgrey">
+
+				<div class="rating">
+					<p>Rating:<br>
+						5.0/5.0 stars</p>
+						<hr>
+						<div class="stars">
+							<img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star">
+						</div>
+				</div>
+
+				<div class="rating">
+					<p>Rating:<br>
+						4.5/5.0 stars</p>
+						<hr>
+						<div class="stars">
+							<img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star star-cropped" alt="star">
+						</div>
+				</div>
+
+				<div class="rating">
+					<p>Rating:<br>
+						4.0/5.0 stars</p>
+						<hr>
+						<div class="stars">
+							<img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star"><img src="https://purepng.com/public/uploads/large/purepng.com-freaking-star-manstargeometricallydecagonconcavestardomyellow-stargoldfreaking-star-man-1421526501528ou0oq.png" class="star" alt="star">
+						</div>
+				</div>
+			</div>
+
+			</div>
+
+	<footer>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-warning" type="button">Search</button>
+      </form>
+		<small>References:<br>
+		<em>Notting Hill.</em> (n.d.) IMDb. <a href="https://www.imdb.com/title/tt0125439" target="_blank">https://www.imdb.com/title/tt0125439/</a><br>
+		<em>A Walk to Remember.</em> (n.d.) IMDb. <a href="https://www.imdb.com/title/tt0281358" target="_blank">https://www.imdb.com/title/tt0281358/</a><br>
+		<em>Crash Landing on You.</em> (n.d.) IMDb. <a href="https://www.imdb.com/title/tt10850932" target="_blank">https://www.imdb.com/title/tt10850932/</a></small>
+	</footer>
+
+</body>
+</html>
